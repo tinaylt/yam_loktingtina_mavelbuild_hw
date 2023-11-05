@@ -13,6 +13,23 @@ body {
     display: none;
 }
 
+article, #instruction {
+    padding: 20px;
+}
+
+article h3, #instruction h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+article p, #instruction p {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin: 0px auto;
+}
+
 /* main header rules */
 
 header {
@@ -66,9 +83,6 @@ header {
     text-decoration: none;
 }
 
-#instruction {
-    text-decoration: none;
-}
 
 /* spritesheet */
 
@@ -97,7 +111,7 @@ header {
     background-position: -750px 0;
 }
 
-/* footer rules */
+/* footer rules*/
 footer {
     color: darkblue;
     padding: 20px 0;
@@ -115,5 +129,63 @@ footer {
     background-position-y: -150px;
 }
 
+/* spritesheet end
 
-/* end */
+/*lightbox*/
+
+.lightbox {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 100, 150, 100);
+    background-image: url(../images/mike.png);
+    background-repeat: no-repeat;
+    background-size: 60vh;
+    background-position: 40px center;
+    z-index: 5000;
+    display: none;
+    opacity: 0.97;
+}
+
+#lightbox2 {
+    background-image: url(../images/ok.png);
+}
+
+.lightbox_close {
+    position: relative;
+    top: 20px;
+    left: 95%;
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.lightbox_close:hover {
+    opacity: 0.5;
+    color: black;
+}
+
+.lightbox article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+}
+
+.lb_heading, .lb_text {
+    text-align: left;
+}
+
+.lb_text {
+    margin-left: 0;
+    padding-top: 20px;
+    line-height: 1.6 !important;
+}
+
+.lightbox:target {
+    display: block;
+}
+
+/*lightbox end*/
