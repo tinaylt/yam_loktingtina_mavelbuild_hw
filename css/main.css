@@ -153,6 +153,10 @@ footer {
     background-image: url(../images/ok.png);
 }
 
+#lightbox3 {
+    background-image: url(../images/don.png);
+}
+
 .lightbox_close {
     position: relative;
     top: 20px;
